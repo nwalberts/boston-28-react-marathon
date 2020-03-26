@@ -1,8 +1,15 @@
 import React from 'react'
 
 const Playlist = (props) => {
+    const buttonClick = props.buttonClick
+    const headerClassName = props.headerClassName
+
     return (
-        <p>{props.playlist.name}</p>
+        <p onClick = {buttonClick}
+        className = {headerClassName}
+        >
+            {props.playlist.name}
+        </p>
     )
 }
 
